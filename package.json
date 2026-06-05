@@ -1,0 +1,25 @@
+{
+  "name": "qa-genai-toolkit",
+  "version": "1.0.0",
+  "description": "QA Automation toolkit — Generative AI integration with Playwright, Claude Sonnet, agents and prompt engineering",
+  "author": "N'Koy Otshudi <nkoy.otshudi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "playwright test",
+    "test:e2e": "playwright test --project=e2e",
+    "test:api": "playwright test --project=api",
+    "test:report": "playwright show-report",
+    "generate": "ts-node --project tsconfig.json scripts/generate-tests.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
