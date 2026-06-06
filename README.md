@@ -24,20 +24,22 @@ This repo shows how a QA Automation engineer integrates Generative AI into the t
 
 ## Core workflow
 
+```
 User Story (Markdown)
-│
-▼
-npm run generate
-(Claude Sonnet API)
-│
-▼
-Generated test scaffold
-│
-▼
-QA Engineer review & refinement
-│
-▼
-Final spec.ts committed to tests/
+        │
+        ▼
+  npm run generate
+  (Claude Sonnet API)
+        │
+        ▼
+  Generated test scaffold
+        │
+        ▼
+  QA Engineer review & refinement
+        │
+        ▼
+  Final spec.ts committed to tests/
+```
 
 **Measured result on a production project:** 80%+ productivity gain on 117 automated tests using this approach.
 
@@ -45,6 +47,7 @@ Final spec.ts committed to tests/
 
 ## Project structure
 
+```
 qa-genai-toolkit/
 ├── .github/
 │   ├── agents/
@@ -66,8 +69,7 @@ qa-genai-toolkit/
 │   └── generated-tests/                       # Script output (scaffold)
 ├── playwright.config.ts
 └── .env.example
-
----
+```
 
 ## Getting started
 
