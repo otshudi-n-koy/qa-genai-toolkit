@@ -9,11 +9,14 @@ applyTo: "**/*.spec.ts"
 Playwright Test with TypeScript. Chromium for E2E, `request` fixture for API tests.
 
 ## Project Structure
+
+```
 tests/
-├── e2e/          # Browser-level tests (.spec.ts)
-├── api/          # API-level tests (.spec.ts)
+├── e2e/          # Browser-level tests (*.spec.ts)
+├── api/          # API-level tests (*.spec.ts)
 models/
 └── TodoPage.ts   # Page Object for the Todo App
+```
 
 ## Naming
 
